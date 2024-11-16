@@ -1,0 +1,50 @@
+/* General Section Styling */
+.about-section {
+  padding: 60px 20px;
+  text-align: center;
+  border-radius: 1px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.about-content {
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: rgba(0, 0, 0, 0.2); /* Light transparency for background box */
+  padding: 40px;
+  border-radius: 15px;
+}
+
+/* Heading Styling */
+.about-content h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+/* Paragraph Styling */
+.about-content p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+
+/* Light Mode Styles */
+.about-section.light {
+  background-color: #f0f0f0;
+  color: #333;
+}
+
+.about-section.light .about-content {
+  background-color: #ffffff; /* White content box for light mode */
+  color: #333;
+}
+
+/* Dark Mode Styles */
+.about-section.dark {
+  background-color: #121212;
+  color: #f5f5f5;
+}
+
+.about-section.dark .about-content {
+  background-color: #1e1e1e; /* Dark content box for dark mode */
+  color: #f5f5f5;
+}
+
