@@ -161,7 +161,7 @@ export const Navbar = () => {
   };
 
   return (
-    <nav className={theme === "light" ? "light" : "dark"}>
+    <nav id="Navbar" className={theme === "light" ? "light" : "dark"}>
       <h1>DavidC</h1>
       
       {/* Hamburger Icon */}
@@ -172,7 +172,7 @@ export const Navbar = () => {
       {/* Menu */}
       <ul className={isMenuOpen ? "menu-open" : ""}>
         <li>
-          <a href="./NavBar.jsx">Home</a>
+          <a href="#Navbar">Home</a>
         </li>
         <li>
           <a href="#about">About</a>
