@@ -125,7 +125,7 @@ const { theme } = useTheme();
                 value={message}
                 onChange={(event) => setMessage(event.target.value)}
               ></textarea>
-              <button type="submit">send</button>
+              <button className="button1" type="submit">send</button>
             </form>
           </div>
 
