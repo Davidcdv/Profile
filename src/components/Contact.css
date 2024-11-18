@@ -194,6 +194,8 @@ button:hover {
 }
 
 .social-grid a svg {
+  width: 24px;  /* Size the icons */
+  height: 24px; /* Ensure the icons are visible */
   margin-right: 0.5rem;
 }
 
@@ -204,6 +206,10 @@ button:hover {
   .social-grid {
     grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); /* Slightly larger minimum column size */
     gap: 0.8rem; /* Smaller gap between items */
+  }
+
+  .social-grid a span { /* Hide text on smaller screens */
+    display: none;
   }
 }
 
@@ -216,6 +222,9 @@ button:hover {
 
   .social-grid a {
     padding: 0.8rem; /* Adjust padding for smaller screens */
+  }
+   .social-grid a span { /* Hide text on mobile screens */
+    display: none;
   }
 }
 

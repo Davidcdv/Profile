@@ -16,7 +16,7 @@ const links = [
     child: (
       <>
         <FaLinkedin size={30} />
-        Linkedin
+       <span> Linkedin</span>
       </>
     ),
     href: "#",
@@ -27,7 +27,7 @@ const links = [
     child: (
       <>
         <FaGithub size={30} />
-        Github
+       <span> Github</span>
       </>
     ),
     href: "#",
@@ -37,7 +37,7 @@ const links = [
     child: (
       <>
         <FaInstagramSquare size={30} />
-        Instagram
+        <span>Instagram</span>
       </>
     ),
     href: "https://www.instagram.com/iam.davidc/",
@@ -47,7 +47,7 @@ const links = [
     child: (
       <>
         <BsWhatsapp size={30} />
-        Whatsapp
+        <span>Whatsapp</span>
       </>
     ),
     href: "https://wa.me/+2349013608339",
