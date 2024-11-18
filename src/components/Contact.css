@@ -1,4 +1,4 @@
-/* Global reset */
+Global reset
 *,
 *::before,
 *::after {
@@ -37,7 +37,7 @@ ul, ol {
 
 .contact.dark {
   background-color: #1e293b;
-  color: rgb(112, 106, 106);
+  color: rgb(250, 246, 246);
 }
 
 .contact.light {
@@ -56,6 +56,17 @@ ul, ol {
   transition: all 0.3s ease;
   margin: 0 auto; /* Center on all screen sizes */
 }
+
+/* Dark Mode Styles */
+body.dark-mode .contact-form {
+  background-color: #333; /* Dark background for dark mode */
+  color: white; /* White text for dark mode */
+  box-shadow: 0 8px 16px rgba(255, 255, 255, 0.1); /* Optional: lighter shadow for dark mode */
+}
+
+
+
+
 
 @media (min-width: 768px) {
   .contact-form {
@@ -195,6 +206,28 @@ button:hover {
   background-color: #1e293b;
 }
 
+
+/* Light Mode Button */
+.contact-form.light-mode button {
+  background-color: #3b82f6;
+  color: white;
+}
+
+.contact-form.light-mode button:hover {
+  background-color: #2563eb;
+}
+
+/* Dark Mode Button */
+.contact-form.dark-mode button {
+  background-color: #1d4ed8;
+  color: white;
+}
+
+.contact-form.dark-mode button:hover {
+  background-color: #2563eb;
+}
+
+
 /* Contact Me Title */
 .contact-me {
   padding: 1rem;
@@ -204,16 +237,39 @@ button:hover {
 
 
 
-
-
-  .button1 {
-  color: #1e293b;
-   padding-left: 200px;
+.button-container {
+  display: inline-block;  /* Allows the box to wrap around the button */
+  border: 2px solid #333; /* Dark border for the box */
+  padding: 1px;          /* Padding inside the box */
+  border-radius: 10px;    /* Rounded corners for the box */
+  background-color: #f4f4f4; /* Light background for the box */
+  margin-left: 180px;
   
-  }
-  @media (min-width:787px)
+}
+
+
+.button1 {
+  background-color: #4CAF50; /* Green background */
+  color: black;              /* White text */
+  padding: 10px 20px;        /* Padding around text */
+  border: none;              /* Remove default border */
+  border-radius: 5px;        /* Rounded corners for the button */
+  font-size: 16px;           /* Font size */
+  cursor: pointer;          /* Pointer cursor on hover */
+  transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+
+.button1:hover {
+  background-color: #45a049; /* Darker green on hover */
+}
+
+
+
+
+  @media (min-width:200px)
   {
-    .button1 {
+    .button-container {
       font-size: 2.5;
     }
   }
@@ -235,4 +291,17 @@ button:hover {
   .contact-container {
     padding: 4rem; /* Adjust padding for larger screens */
   }
+}
+/* Light Mode */
+.contact-form.light{
+  background-color: white;
+  color: black;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+/* Dark Mode */
+.contact-form.dark {
+  background-color: #191919;
+  color: white;
+  box-shadow: 0 8px 16px rgba(255, 255, 255, 0.1);
 }

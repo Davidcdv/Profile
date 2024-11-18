@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState  } from "react";
 import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
 import successAlert from "./SuccessModal";
@@ -6,6 +6,9 @@ import { FaGithub, FaInstagramSquare, FaLinkedin, FaTwitter } from "react-icons/
 import { BsWhatsapp } from "react-icons/bs";
 import "./Contact.css"
 import { useTheme } from "../context/ThemeContext"; 
+
+
+
 
 const links = [
   {
@@ -95,7 +98,7 @@ const { theme } = useTheme();
 
         <div>
           <div>
-            <form ref={form} className="contact-form" onSubmit={sendEmail}>
+            <form ref={form} className={`contact-form ${theme}`} onSubmit={sendEmail}>
               <p className="md:text-lg text-md font-bold py-2 dark:text-slate-300 bg-clip-text">
                 Name
               </p>
@@ -125,7 +128,9 @@ const { theme } = useTheme();
                 value={message}
                 onChange={(event) => setMessage(event.target.value)}
               ></textarea>
+              <div className="button-container">
               <button className="button1" type="submit">send</button>
+              </div>
             </form>
           </div>
 

@@ -146,7 +146,7 @@
 
 
 
-import React, { useState } from 'react';
+import React, { useState } from "react";
 import { useTheme } from "../context/ThemeContext";
 import { FaSearch, FaBars } from "react-icons/fa"; // Import Hamburger Icon
 import { ThemeToggleButton } from "./ThemeToggleButton";
@@ -172,7 +172,7 @@ export const Navbar = () => {
       {/* Menu */}
       <ul className={isMenuOpen ? "menu-open" : ""}>
         <li>
-          <a href="#Navbar">Home</a>
+          <a href="#">Home</a>
         </li>
         <li>
           <a href="#about">About</a>
