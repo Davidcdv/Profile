@@ -249,6 +249,7 @@ button:hover {
   margin: 0;                /* Reset margin */
   width: 100%;              /* Full width of the screen */
   text-align: center;       /* Ensure button is centered */
+  cursor: pointer;   
 }
 
 /* Button styles */
