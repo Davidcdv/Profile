@@ -236,18 +236,22 @@ button:hover {
   margin-bottom: 1rem; }
 
 
-
+/* Button container styles */
 .button-container {
-  display: inline-block;  /* Allows the box to wrap around the button */
-  border: 2px solid #333; /* Dark border for the box */
-  padding: 1px;          /* Padding inside the box */
-  border-radius: 10px;    /* Rounded corners for the box */
+  display: flex;            /* Use Flexbox to center content */
+  justify-content: center;  /* Center horizontally */
+  align-items: center;      /* Center vertically */
+  height: 7vh;            /* Full viewport height */
+  border: 2px solid #333;   /* Dark border for the box */
+  padding: 1px;             /* Padding inside the box */
+  border-radius: 10px;      /* Rounded corners for the box */
   background-color: #f4f4f4; /* Light background for the box */
-  margin-left: 180px;
-  
+  margin: 0;                /* Reset margin */
+  width: 100%;              /* Full width of the screen */
+  text-align: center;       /* Ensure button is centered */
 }
 
-
+/* Button styles */
 .button1 {
   background-color: #4CAF50; /* Green background */
   color: black;              /* White text */
@@ -257,22 +261,35 @@ button:hover {
   font-size: 16px;           /* Font size */
   cursor: pointer;          /* Pointer cursor on hover */
   transition: background-color 0.3s ease; /* Smooth transition */
+  display: inline-block;     /* Ensure it stays inline with its container */
 }
 
+/* Responsive adjustments */
 
-.button1:hover {
-  background-color: #45a049; /* Darker green on hover */
-}
-
-
-
-
-  @media (min-width:200px)
-  {
-    .button-container {
-      font-size: 2.5;
-    }
+/* For medium screens (Tablets and larger phones) */
+@media (max-width: 768px) {
+  .button-container {
+    padding: 5px;       /* Reduce padding inside the container */
   }
+
+  .button1 {
+    padding: 8px 16px;  /* Adjust padding for smaller screens */
+    font-size: 14px;    /* Slightly smaller font */
+  }
+}
+
+/* For small screens (Mobile phones) */
+@media (max-width: 480px) {
+  .button-container {
+    padding: 10px;      /* Adjust padding */
+  }
+
+  .button1 {
+    padding: 12px 0;    /* Increase vertical padding for touch-friendly interaction */
+    font-size: 16px;    /* Keep font size large for readability */
+  }
+}
+
 
 
 @media (min-width: 768px) {
