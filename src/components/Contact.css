@@ -197,6 +197,31 @@ button:hover {
   margin-right: 0.5rem;
 }
 
+
+
+/* For medium screens (Tablets and larger phones) */
+@media (max-width: 768px) {
+  .social-grid {
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); /* Slightly larger minimum column size */
+    gap: 0.8rem; /* Smaller gap between items */
+  }
+}
+
+/* For small screens (Mobile phones) */
+@media (max-width: 480px) {
+  .social-grid {
+    grid-template-columns: repeat(auto-fit, minmax(80px, 1fr)); /* Even smaller columns */
+    gap: 0.5rem; /* Smaller gap */
+  }
+
+  .social-grid a {
+    padding: 0.8rem; /* Adjust padding for smaller screens */
+  }
+}
+
+
+
+
 .contact-form.dark .social-grid a {
   background-color: #2d3748;
   color: #cbd5e0;
