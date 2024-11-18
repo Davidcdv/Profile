@@ -248,8 +248,7 @@ button:hover {
   background-color: #f4f4f4; /* Light background for the box */
   margin: 0;                /* Reset margin */
   width: 100%;              /* Full width of the screen */
-  text-align: center;       /* Ensure button is centered */
-  cursor: pointer;   
+  text-align: center;       /* Ensure button is centered */ 
 }
 
 /* Button styles */
