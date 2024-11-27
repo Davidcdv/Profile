@@ -16,10 +16,10 @@ const links = [
     child: (
       <>
         <FaLinkedin size={30} />
-       <span> Linkedin</span>
+        <span> Linkedin</span>
       </>
     ),
-    href: "#",
+    href: "https://www.linkedin.com/in/david-chukwuemeke-665224339/",
     style: "rounded-tr-md",
   },
   {
@@ -27,10 +27,10 @@ const links = [
     child: (
       <>
         <FaGithub size={30} />
-       <span> Github</span>
+        <span> Github</span>
       </>
     ),
-    href: "#",
+    href: "https://github.com/Davidcdv",
   },
   {
     id: 3,
