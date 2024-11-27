@@ -7,7 +7,7 @@ export const Hero = () => {
     { text: "👋 Hello My Name is " },
     { text: "David", class: "name-highlight" },
     { text: ", I am a " },
-    { text: "FullStack Software Engineer", class: "role-highlight" },
+    { text: "FullStack Software Engineer.", class: "role-highlight" },
   ];
 
   useEffect(() => {
