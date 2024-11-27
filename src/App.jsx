@@ -5,7 +5,7 @@ import { Hero } from "./components/Hero";
 import { About } from "./components/About";
 import {Skills} from "./components/Skills";
 import Contact from "./components/Contact";
-
+import BackToTopButton from "./components/BackToTopButton";
 
 function App() {
   return (
@@ -13,8 +13,9 @@ function App() {
       <Navbar />
       <Hero />
       <About />
-   <Skills/>
-   <Contact/>
+      <Skills />
+      <Contact />
+      <BackToTopButton/>
     </ThemeProvider>
   );
 }

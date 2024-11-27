@@ -24,6 +24,8 @@
   font-size: 1.2rem;
   margin-bottom: 40px;
   color: #c0c0c0;
+   
+
 }
 
 /* Buttons */
@@ -58,3 +60,27 @@
 .contact-btn:hover {
   background-color: #00d1ff;
 }
+
+
+/* Blinking cursor styling */
+.blink-cursor {
+  display: inline-block;    /* Makes the cursor stay inline with the text */
+  width: 1ch;               /* Width of a single character (to match text size) */
+  background-color: transparent; /* Keeps the cursor transparent */
+  margin-left: 2px;         /* Adds a small gap between the text and the cursor */
+  vertical-align: middle;   /* Aligns the cursor vertically with the text */
+}
+
+/* Animation for the blinking effect */
+.blink-cursor::after {
+  content: "|";             /* The cursor symbol */
+  animation: blink 0.7s step-end infinite; /* Blinking effect */
+}
+
+/* Keyframes for blinking animation */
+@keyframes blink {
+  50% {
+    opacity: 0;             /* Makes the cursor disappear at 50% of the cycle */
+  }
+}
+

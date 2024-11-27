@@ -454,15 +454,59 @@ nav ul li a:hover {
     content: '\ed8b'; 
   }
 }
+:root {
+  --light-bg: #c4cc26; /* Light mode background */
+  --light-color: #333; /* Light mode text color */
+  --dark-bg: #333; /* Dark mode background */
+  --dark-color: #f5f5f5; /* Dark mode text color */
+}
 
+.scroll-to-top-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  border-radius: 50%;
+  padding: 16px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+  cursor: pointer;
+  background: linear-gradient(to top right, #008080, #00bcd4); /* Default gradient */
+  color: white;
+}
 
+.scroll-to-top-button.light {
+  background: var(--light-bg);
+  color: var(--light-color);
+}
 
+.scroll-to-top-button.dark {
+  background: var(--dark-bg);
+  color: var(--dark-color);
+}
 
+.scroll-to-top-button:hover {
+  transform: scale(1.1) ; /* Hover scale and rotation */
+}
 
-
-
-
-
-
-
+.scroll-to-top-button:active {
+  transform: scale(0.95); /* Active button press effect */
+}
+.scroll-to-top-button {
+  width: 60px; /* Increase button width */
+  height: 60px; /* Increase button height */
+}
+.scroll-to-top-button svg {
+  width: 50px; /* Desired width */
+  height: 50px; /* Desired height */
+}
+.scroll-to-top-button .react-scroll-to-top-button svg {
+  width: 50px !important;
+  height: 50px !important;
+}
+.scroll-to-top-button {
+  overflow: visible;
+}
 
