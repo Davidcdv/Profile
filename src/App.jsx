@@ -6,7 +6,7 @@ import { About } from "./components/About";
 import {Skills} from "./components/Skills";
 import Contact from "./components/Contact";
 import BackToTopButton from "./components/BackToTopButton";
-
+import Project from "./components/Project";
 function App() {
   return (
     <ThemeProvider>
@@ -14,6 +14,7 @@ function App() {
       <Hero />
       <About />
       <Skills />
+      <Project/>
       <Contact />
       <BackToTopButton/>
     </ThemeProvider>
