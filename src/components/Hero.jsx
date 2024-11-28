@@ -29,7 +29,7 @@ export const Hero = () => {
           }
           setDisplayedText(tempText); // Update the text to be displayed
           charIndex++;
-          setTimeout(typeWriter, 100); // Adjust speed here
+          setTimeout(typeWriter, 80); // Adjust speed here
         } else {
           partIndex++;
           charIndex = 0;
