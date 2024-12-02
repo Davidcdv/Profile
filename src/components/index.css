@@ -431,7 +431,7 @@ nav ul li a:hover {
     left: -250px;
     /*background-color: rgba(51, 51, 51, 0.9); Transparent dark background */
     /* background: rgba(0, 0, 0, 0); Transparent background */
-    transition: left 0.3s ease-in-out; /* Smooth transition */
+    transition: left 0.6s ease-in-out; /* Smooth transition */
      height: 100%; /* Full screen height */
  /* background-color: rgba(51, 51, 51, 0.9); Dark background */
     z-index: 1000; /* Ensures it’s above other elements */
@@ -439,7 +439,7 @@ nav ul li a:hover {
     backdrop-filter: blur(5px); /* Adding blur effect */
     padding: 12px 0;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Add shadow for visibility */
-     scroll-behavior: smooth; /* Smooth scrolling when opening */
+   
   }
  nav ul.dark {
  background-color: rgba(51, 51, 51, 0.9); 
@@ -463,12 +463,9 @@ nav.dark ul {
     display: flex;
     left: 0;
      align-items: flex-start; /* Align items to the left */
-  padding-left: 20px; /* Add some left padding for spacing */
-   padding-left: 20px; /* Add some left padding for spacing */
-  border-right: 2px solid  rgb(126, 126, 128); /* Add border to the right side */
-  border-top: 2px solid #fff; /* Add border to the top */
-  border-bottom: 1px solid #fff; /* Optional: Add border to the bottom */
-  border-radius: 5px; /* Optional: Rounded corners */
+  padding-left: 70px; /* Add some left padding for spacing */
+  margin-left: -60px;
+   /* Optional: Rounded corners */
   }
   /* Navbar links for small screens */
   nav ul li a {
