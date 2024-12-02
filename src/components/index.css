@@ -367,6 +367,7 @@ html, body {
 
 /* Hamburger Icon styling */
 .hamburger-icon {
+  position: fixed;
   display: none;
   cursor: pointer;
   font-size: 30px;
@@ -406,21 +407,36 @@ nav ul li a:hover {
     border: none;
     backdrop-filter: blur(5px); /* Adding blur effect */
     background-color: transparent;
+    cursor: pointer;
+    margin-right: ;
+     right: 12px; /* Adjust the distance from the right */
+     z-index: 10;
+  transition: transform 0.3s ease; /* Smooth rotation */
   }
 
+  .hamburger-icon.dark{
+    color: white; /* For dark mode */
+  }
+.hamburger-icon.open {
+  transform: rotate(45deg); /* Rotate to form an 'X' */
+}
   /* The menu items will be hidden by default */
   nav ul {
-    display: none;
+    display: flex;
     flex-direction: column;
     gap: 10px;
     align-items: center;
-    width: 100%;
-    position: absolute;
-    top: 60px; /* Adjust according to your navbar height */
-    left: 0;
+    width: 250px;
+    position: fixed;
+    top: 0; /* Adjust according to your navbar height */
+    left: -250px;
     /*background-color: rgba(51, 51, 51, 0.9); Transparent dark background */
-     background: rgba(0, 0, 0, 0); /* Transparent background */
-    border: none;
+    /* background: rgba(0, 0, 0, 0); Transparent background */
+    transition: left 0.3s ease-in-out; /* Smooth transition */
+     height: 100%; /* Full screen height */
+ background-color: rgba(51, 51, 51, 0.9); /* Dark background */
+    z-index: 1000; /* Ensures it’s above other elements */
+     border: none;
     backdrop-filter: blur(5px); /* Adding blur effect */
     padding: 12px 0;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Add shadow for visibility */
@@ -430,6 +446,7 @@ nav ul li a:hover {
   /* When the menu is open, we display the links */
   nav ul.menu-open {
     display: flex;
+    left: 0;
   }
 
   /* Navbar links for small screens */

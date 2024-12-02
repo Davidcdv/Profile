@@ -148,7 +148,7 @@
 
 import React, { useState } from "react";
 import { useTheme } from "../context/ThemeContext";
-import { FaSearch, FaBars } from "react-icons/fa"; // Import Hamburger Icon
+import { FaBars, FaTimes } from "react-icons/fa"; // Import Hamburger Icon
 import { ThemeToggleButton } from "./ThemeToggleButton";
 import "./index.css"; // Importing CSS
 
@@ -163,12 +163,6 @@ export const Navbar = () => {
   return (
     <nav id="Navbar" className={theme === "light" ? "light" : "dark"}>
       <h1>DavidC</h1>
-      
-      {/* Hamburger Icon */}
-      <div className="hamburger-icon" onClick={toggleMenu}>
-        <FaBars /> {/* This will show the hamburger icon */}
-      </div>
-
       {/* Menu */}
       <ul className={isMenuOpen ? "menu-open" : ""}>
         <li>
@@ -181,7 +175,13 @@ export const Navbar = () => {
           <a href="#contact">Contact</a>
         </li>
       </ul>
-
+      {/* Hamburger Icon */}
+      <div
+        className={`hamburger-icon ${isMenuOpen ? "open" : ""}`}
+        onClick={toggleMenu}
+      >
+        {isMenuOpen ? <FaTimes /> : <FaBars />} {/* Toggle between icons */}
+      </div>
       <div className="navbar-icons">
         {/* Search Icon */}
         <ThemeToggleButton />
