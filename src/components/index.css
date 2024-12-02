@@ -408,7 +408,7 @@ nav ul li a:hover {
     backdrop-filter: blur(5px); /* Adding blur effect */
     background-color: transparent;
     cursor: pointer;
-     right: 12px; /* Adjust the distance from the right */
+     right: 9px; /* Adjust the distance from the right */
      z-index: 10;
   transition: transform 0.3s ease; /* Smooth rotation */
   }
@@ -433,21 +433,43 @@ nav ul li a:hover {
     /* background: rgba(0, 0, 0, 0); Transparent background */
     transition: left 0.3s ease-in-out; /* Smooth transition */
      height: 100%; /* Full screen height */
- background-color: rgba(51, 51, 51, 0.9); /* Dark background */
+ /* background-color: rgba(51, 51, 51, 0.9); Dark background */
     z-index: 1000; /* Ensures it’s above other elements */
      border: none;
     backdrop-filter: blur(5px); /* Adding blur effect */
     padding: 12px 0;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Add shadow for visibility */
-    
+     scroll-behavior: smooth; /* Smooth scrolling when opening */
   }
+ nav ul.dark {
+ background-color: rgba(51, 51, 51, 0.9); 
+  
+ }
+ nav ul.light{
+  background-color: rgba(245, 239, 239, 0);
+  
+ }
+/* For the menu when the theme is light */
+nav.light ul {
+  background-color: rgba(213, 211, 211, 0.7); /* Dark background for light theme */
+}
 
+/* For the menu when the theme is dark */
+nav.dark ul {
+  background-color: rgba(50, 49, 49, 0.7); /* Light background for dark theme */
+}
   /* When the menu is open, we display the links */
   nav ul.menu-open {
     display: flex;
     left: 0;
+     align-items: flex-start; /* Align items to the left */
+  padding-left: 20px; /* Add some left padding for spacing */
+   padding-left: 20px; /* Add some left padding for spacing */
+  border-right: 2px solid  rgb(126, 126, 128); /* Add border to the right side */
+  border-top: 2px solid #fff; /* Add border to the top */
+  border-bottom: 1px solid #fff; /* Optional: Add border to the bottom */
+  border-radius: 5px; /* Optional: Rounded corners */
   }
-
   /* Navbar links for small screens */
   nav ul li a {
     color: white; /* For dark mode */
