@@ -5,12 +5,12 @@ export const Skills = () => {
   const skills = [
     {
       id: 1,
-      src: " https://uxwing.com/typescript-programming-language-icon/",
+      src: "../assets/icons/typescript-programming-language-icon.svg",
       paragraph: "TypeScript",
     },
     {
       id: 2,
-      src: "https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/graphql-icon.png",
+      src: "../assets/icons/graphql-icon.svg",
       paragraph: "GraphQL",
     },
     {
@@ -20,27 +20,27 @@ export const Skills = () => {
     },
     {
       id: 4,
-      src: "https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/python-programming-language-icon.png",
+      src: "../assets/icons/python-programming-language-icon.svg",
       paragraph: "Python",
     },
     {
       id: 5,
-      src: "https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/javascript-programming-language-icon.png",
+      src: "../assets/icons/javascript-programming-language-icon.svg",
       paragraph: "JavaScript",
     },
     {
       id: 6,
-      src: "https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/django-icon.png",
+      src: "../assets/icons/django-icon.svg",
       paragraph: "Django (DRF)",
     },
     {
       id: 7,
-      src: "https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/node-js-icon.png",
+      src: "../assets/icons/node-js-icon.svg",
       paragraph: "Node.js (Express.js)",
     },
     {
       id: 8,
-      src: "https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/nest-js-icon.png",
+      src: "../assets/icons/nest-js-icon.svg",
       paragraph: "Nest.js",
     },
     {
@@ -70,12 +70,12 @@ export const Skills = () => {
     },
     {
       id: 14,
-      src: "https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/java-programming-language-icon.png",
+      src: "../assets/icons/java-programming-language-icon.svg",
       paragraph: "Java",
     },
     {
       id: 15,
-      src: "https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/mysql-icon.png",
+      src: "../assets/icons/mysql-icon.svg",
       paragraph: "Mysql",
     },
     {
