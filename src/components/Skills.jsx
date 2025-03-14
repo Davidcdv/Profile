@@ -30,7 +30,7 @@ export const Skills = () => {
     },
     {
       id: 6,
-      src: "../assets/icons/django-icon.png",
+      src: "https://www.svgrepo.com/show/353657/django-icon.svg",
       paragraph: "Django (DRF)",
     },
     {
