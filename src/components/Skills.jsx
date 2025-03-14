@@ -5,7 +5,7 @@ export const Skills = () => {
   const skills = [
     {
       id: 1,
-      src: "https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/typescript-programming-language-icon.png",
+      src: " https://uxwing.com/typescript-programming-language-icon/",
       paragraph: "TypeScript",
     },
     {
