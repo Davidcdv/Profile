@@ -5,12 +5,12 @@ export const Skills = () => {
   const skills = [
     {
       id: 1,
-      src: "../assets/icons/typescript-programming-language-icon.svg",
+      src: "https://www.svgrepo.com/show/374146/typescript-official.svg",
       paragraph: "TypeScript",
     },
     {
       id: 2,
-      src: "../assets/icons/graphql-icon.svg",
+      src: "https://www.svgrepo.com/show/378424/graphql-fill.svg",
       paragraph: "GraphQL",
     },
     {
@@ -20,12 +20,12 @@ export const Skills = () => {
     },
     {
       id: 4,
-      src: "../assets/icons/python-programming-language-icon.svg",
+      src: "https://www.svgrepo.com/show/452091/python.svg",
       paragraph: "Python",
     },
     {
       id: 5,
-      src: "../assets/icons/javascript-programming-language-icon.svg",
+      src: "https://www.svgrepo.com/show/353925/javascript.svg",
       paragraph: "JavaScript",
     },
     {
@@ -35,12 +35,12 @@ export const Skills = () => {
     },
     {
       id: 7,
-      src: "../assets/icons/node-js-icon.svg",
+      src: "https://www.svgrepo.com/show/354118/nodejs.svg",
       paragraph: "Node.js (Express.js)",
     },
     {
       id: 8,
-      src: "../assets/icons/nest-js-icon.svg",
+      src: "https://www.svgrepo.com/show/373872/nestjs.svg",
       paragraph: "Nest.js",
     },
     {
@@ -70,12 +70,12 @@ export const Skills = () => {
     },
     {
       id: 14,
-      src: "../assets/icons/java-programming-language-icon.svg",
+      src: "https://www.svgrepo.com/show/452234/java.svg",
       paragraph: "Java",
     },
     {
       id: 15,
-      src: "../assets/icons/mysql-icon.svg",
+      src: "https://www.svgrepo.com/show/303251/mysql-logo.svg",
       paragraph: "Mysql",
     },
     {
