@@ -623,6 +623,9 @@ body {
   cursor: pointer;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+.manage-card {
+ height: 100%;
+}
 
 .project-card:hover {
   transform: translateY(-5px);

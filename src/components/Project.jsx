@@ -1,6 +1,7 @@
 import React from "react";
 import SpotifyClone from "../assets/Spotify-clone-app.webp";
 import WeatherApp from "../assets/weather.png";
+import Manage from "../assets/manage.jpeg";
 import "./index.css";
 import { useTheme } from "../context/ThemeContext"; 
 
@@ -27,6 +28,17 @@ const Project = () => {
       Github: "https://github.com/Davidcdv/WeatherApp",
       stack: "HTML,CSS & JavaScript",
     },
+    {
+      id: 3,
+      src: Manage,
+      name: "Manage Website",
+      description:
+        "A website to express my Front-End Skills in designing and captivating User Experience ",
+      live: "https://manage2.onrender.com/",
+      Github: "https://github.com/Davidcdv/Manage",
+      stack: "React,CSS(TailWind CSS) & JavaScript",
+    },
+
     // Add the rest of the projects here
   ];
   const { theme } = useTheme(); 
@@ -62,7 +74,7 @@ const Project = () => {
                 rel="noreferrer"
                 className="project-card-link"
               >
-                <div className="project-card">
+                <div className={`project-card ${id === 3 ? 'manage-card' : ''}`}>
                   <img src={src} alt={name} className="project-image" />
                   <div className="project-details">
                     <h1 className="project-name">{name}</h1>

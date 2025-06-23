@@ -10,16 +10,13 @@ export const About = () => {
       <div className="about-content">
         <h2>About</h2>
         <p>
-          A highly dedicated Backend Engineer with 2+ years of experience
-          specializing in Node.js and other backend and frontend technologies.
-          Proficient in building robust APIs and scalable systems using MongoDB,
-          PostgreSQL, GraphQL, NestJS, and Django. Currently expanding knowledge
-          in SpringBoot, with a passion for deepening expertise in backend
-          development. While skilled in frontend technologies like React,
-          Tailwind, NextJS, and TypeScript, my primary focus is on backend
-          development, aiming to eventually transition into the machine learning
-          space. Dedicated to continuous learning and tackling complex
-          challenges.
+         I’m a dedicated <i><b>Full-Stack Software Engineer</b></i> with a strong foundation in both backend and frontend development. I specialize in building robust APIs and scalable systems using Node.js, MongoDB, PostgreSQL, GraphQL, NestJS, and Django, while currently expanding my knowledge in Spring Boot.
+
+On the frontend, I enjoy creating clean, responsive, and interactive user interfaces using React, Next.js, Tailwind CSS, and TypeScript. I’m passionate about building full-featured applications that are not only functional under the hood but also intuitive and enjoyable to use.
+
+While I lean toward backend architecture and data-driven systems, I equally value frontend craftsmanship and believe the best engineers can bridge both worlds. I’m also exploring the fields of  <i>Machine learning and AI</i>, aiming to eventually apply full-stack skills to intelligent systems.
+
+Above all, I’m committed to continuous learning, writing clean code, and solving real-world problems through thoughtful, scalable solutions ✨🦾.
         </p>
       </div>
     </section>

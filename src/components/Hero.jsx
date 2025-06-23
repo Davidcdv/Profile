@@ -50,11 +50,11 @@ export const Hero = () => {
           {/* Add the blinking cursor here */}
         </h1>
         <p>
-          Highly dedicated Software Engineer with 2+ years of experience
-          specializing in Node.js and other backend and frontend technologies.
+          Highly dedicated Software Engineer
+          specializing in React.js and other frontend and backend technologies.
         </p>
         <div className="hero-buttons">
-          <a href="#resume" className="btn resume-btn">
+          <a href="https://drive.google.com/file/d/1HiKRGvtkK5fCC4lshj99GqmVWArsxXbs/view?usp=drivesdk" className="btn resume-btn">
             View Resume
           </a>
           <a href="#contact" className="btn contact-btn">
